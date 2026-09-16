@@ -27,9 +27,4 @@ customer = {
 response = requests.post(url, json=customer)
 print("Status:", response.status_code)
 print("Body:", repr(response.text))
-#result = response
 print(response)
-#if result["churn"] == 'True':
-#    print('sending promo email to %s' % customer_id)
-#else:
-#    print('not sending promo email to %s' % customer_id)

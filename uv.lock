@@ -7,27 +7,6 @@ resolution-markers = [
     "sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 
-[manifest]
-members = [
-    "05-deployment",
-    "mlzoomcamp",
-]
-
-[[package]]
-name = "05-deployment"
-version = "0.1.0"
-source = { editable = "05-deployment" }
-dependencies = [
-    { name = "fastapi" },
-    { name = "uvicorn" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "fastapi" },
-    { name = "uvicorn" },
-]
-
 [[package]]
 name = "annotated-doc"
 version = "0.0.5"

@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from fastapi import FastAPI
 import uvicorn
-from typing import Dict, Any
+from typing import Literal
 from pydantic import BaseModel, Field
 
 class Customer(BaseModel):
@@ -72,4 +72,4 @@ def predict(customer: Customer):
     return PredictResponse(churn_probability=float(y_pred[0]), churn=bool(churn[0]))
 
 if __name__ == '__main__':
-    uvicorn.run(host='0.0.0.0', port=9696, debug=True)
+    uvicorn.run(app, host='0.0.0.0', port=9696)
