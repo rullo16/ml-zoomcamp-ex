@@ -8,6 +8,7 @@ wheels/
 
 # Virtual environments
 .venv/
+.venv-*/
 venv/
 
 # Jupyter
@@ -19,6 +20,21 @@ venv/
 
 # OS
 .DS_Store
+
+# Downloaded datasets and archives
+data/
+*.zip
+*.zip.*
+
+# Trained model artifacts
+*.pth
+*.pt
+*.onnx
+*.onnx.data
+
+# Cloned/downloaded reference assets
+clothing-dataset-small/
+imagenet_classes.txt
 
 .claude/
 .idea/
